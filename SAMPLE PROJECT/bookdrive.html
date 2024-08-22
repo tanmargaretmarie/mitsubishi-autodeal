@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="navbar">
+      <a href="Index.html">Home</a>
+      <a href="carmodels.html">Car Models</a>
+      <a href="getquote.html">Get Quote</a>
+      <a href="bookdrive.html">Book a Test Drive</a>
+    </div>
+    <section>
+        <h2>Book a Test Drive</h2>
+        <form>
+            <div>
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" placeholder="11-Digit Phone Number" pattern="\d{11}" maxlength="11" required>
+        </div>
+        <div>
+            <label for="carmodel">Car Model:</label>
+            <select name="carmodel" id="carmodel" required>
+                <option value="" disabled selected>Select a car model</option>
+                <option value="montero">Montero Sport</option>
+                <option value="xpander">Xpander</option>
+                <option value="triton">Triton</option>
+                <option value="xforce">XForce</option>
+                <option value="l300">L300</option>
+                <option value="mirage">Mirage</option>
+                <option value="strada">Strada</option>
+            </select>
+        </div>
+        <div>
+            <label for="datetime">Preferred Date and Time</label>
+            <input type="datetime-local" name="datetime" id="datetime" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    </section>
